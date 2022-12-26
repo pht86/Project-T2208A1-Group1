@@ -1,15 +1,87 @@
 @import url(fonts.css);
 @import url(colors.css);
+@import url(format.css);
 body{
     margin: 0 auto;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family:courier,arial,helvetica;
 }
 .clr{
     clear: both;
 }
+.section-full{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*------------ Preloader ------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+#spinner {
+    display: block;
+    position: relative;
+    left: 46%;
+    top: 46%;
+    width: 70px;
+    height: 70px;
+}
+/*------------ Header ------------*/
+#header-top{
+    width: 100%;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#header-top a{
+    margin-right: 15px;
+}
+#header-top-left{
+    width: 50%;
+    padding-top: 17px;
+    float: left;
+}
+#header-top-right{
+    width: 50%;
+    padding-top: 17px;
+    text-align: right;
+    float: left;
+}
+#header-logo{
+    width: 100%;
+}
+.header-logo-image{
+    width: 35%;
+    float: left;
+}
+.header-logo-call{
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+.header-logo-time{
+    width: 35%;
+    float: left;
+    text-align: right;
+    margin-bottom: -15px;
+}
+.header-logo-time ul{
+    list-style: none;
+}
+.header-logo-time ul li{
+    display: inline-block;
+}
+.logo{
+    padding-top: 10px;
+    height: 60px;
+}
 /*------------ Slider ------------*/
 .slider-container {
-    max-width: 1200px;
     position: relative;
     margin: auto;
 }
@@ -21,14 +93,17 @@ body{
     animation-duration: 2.5s;
 }
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {opacity: .1}
+    to {opacity: 0.8}
 }
 .slider-text {
     position: absolute;
-    bottom: 10px;
+    bottom: 30%;
     font-size: 25px;
+    padding: 15px 5px;
     font-weight: 700;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     text-align: center;
+    color: #FD4084;
 }

@@ -1,0 +1,29 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+    #header-top-left {
+        width: 100%;
+        text-align: center;
+    }
+    #header-top-right{
+        display: none;
+    }
+    .header-logo-image{
+        width: 100%;
+        text-align: center;
+    }
+    .header-logo-call, .header-logo-time{
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .header-logo-call, .header-logo-time{
+        display: none;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+
+}
