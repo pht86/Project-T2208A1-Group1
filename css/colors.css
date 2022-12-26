@@ -1,0 +1,36 @@
+/*-------Text Color------------*/
+.text-primary{
+    color: #FD4084;
+}
+.text-white{
+    color: #ffffff;
+}
+.text-dark{
+    color: #000000;
+}
+.text-dark-22{
+    color: #222222;
+}
+.text-dark-33{
+    color: #333333;
+}
+.text-gray{
+    color: #808080;
+}
+/*-------Background Color------------*/
+.bg-primary{
+    background-color: #FD4084;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+.bg-dark{
+    background-color: #000000;
+}
+.bg-dark-22{
+    background-color: #222222;
+}
+.bg-dark-33{
+    background-color: #222222;
+}
+
