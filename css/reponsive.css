@@ -26,6 +26,14 @@
         width: 96%;
         margin-left: 2%;
     }
+    #about-contact, #about-info{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #about-info{
+        text-align: center;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
