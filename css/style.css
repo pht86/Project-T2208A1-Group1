@@ -80,6 +80,36 @@ body{
     padding-top: 10px;
     height: 60px;
 }
+/*------------ Navigation Bar ------------*/
+#navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #F5F5F5;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+.navButton{
+    float: left;
+    text-align: center;
+    padding: 10px 15px;
+    margin-right: 2px;
+    font-size: 15px;
+    margin-top: 15px;
+    color: #222222;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navButton:hover{
+    background-color: #FD4084;
+    color: #FFFFFF;
+}
+.active{
+    background-color: #FD4084;
+    color: #FFFFFF;
+}
 /*------------ Slider ------------*/
 .slider-container {
     position: relative;
@@ -90,11 +120,11 @@ body{
 }
 .fade {
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 3.5s;
 }
 @keyframes fade {
-    from {opacity: .1}
-    to {opacity: 0.8}
+    from {opacity: 0}
+    to {opacity: 1}
 }
 .slider-text {
     position: absolute;
@@ -106,4 +136,97 @@ body{
     margin-left: 25%;
     text-align: center;
     color: #FD4084;
+}
+/*------------ Footer ------------*/
+.logo-footer{
+    height: 50px;
+    margin-top: 30px;
+}
+#footer p{
+    width: 60%;
+    margin-left: 20%;
+}
+.foot-title{
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+#footer hr{
+    width: 65px;
+    float: left;
+    border: none;
+    border-top: 1px solid #FD4084;
+}
+#footer input{
+    width: 80%;
+    height: 35px;
+    border: 1px solid #333333;
+    background-color: #272727;
+    font-family:courier,arial,helvetica;
+    color: #F5F5F5;
+}
+#footer textarea{
+    width: 80%;
+    height: 70px;
+    border: 1px solid #333333;
+    background-color: #272727;
+    color: #F5F5F5;
+}
+#footer button{
+    height: 35px;
+    border: 1px solid #333333;
+    background-color: #272727;
+    cursor: pointer;
+}
+#footer button:hover{
+    background-color: #FFFFFF;
+    color: #FD4084;
+}
+#footer a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #808080;
+    font-size: 14px;
+    line-height: 30px;
+}
+#footer a:hover{
+    color: #FD4084;
+}
+.tag{
+    font-size: 13px;
+    border: 1px solid #808080;
+    color: #808080;
+    float: left;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.tag:hover{
+    color: #FFFFFF;
+}
+.text-open{
+    font-size: 14px;
+    color: #808080;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+/*------------ Button Go to top ------------*/
+#btnGoTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #CCCCCC;
+    color: white;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+#btnGoTop:hover{
+    background-color: #FD4084;
 }
