@@ -1,6 +1,7 @@
 @import url(fonts.css);
 @import url(colors.css);
 @import url(format.css);
+@import url(gallery.css);
 body{
     margin: 0 auto;
     font-family:courier,arial,helvetica;
@@ -82,6 +83,16 @@ body{
 }
 #about-contact button:hover{
     background-color: #CCCCCC;
+}
+.sub-menu{
+    color: #808080;
+    background-color: #F5F5F5;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.sub-menu:hover{
+    color: #FFFFFF;
+    background-color: #FD4084;
 }
 /*------------ Preloader ------------*/
 #preloader {

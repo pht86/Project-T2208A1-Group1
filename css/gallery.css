@@ -1,0 +1,47 @@
+.row-img{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.col-img{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-hover-zoom{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid #ffff;
+}
+.img-hover-zoom img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition:  transform .5s ease;
+}
+.img-hover-zoom:hover img{
+    transform: scale(1.5);
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+    .col-img{
+        flex: 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .col-img{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+    .col-img{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
