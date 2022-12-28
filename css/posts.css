@@ -27,7 +27,7 @@
     width: 96%;
     margin-left: 2%;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 20px;
     text-decoration: none;
     color: #FD4084;
 }
@@ -57,6 +57,7 @@
     font-size: 15px;
     line-height: 20px;
     text-align: justify;
+    color: #808080;
 }
 .posts-short-des-list{
     width: 96%;
@@ -64,10 +65,29 @@
     font-size: 14px;
     text-align: justify;
     line-height: 20px;
+    color: #808080;
 }
 .section-line{
     width: 60%;
     margin-left: 20%;
     border: none;
     border-top: 1px solid #CCCCCC;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .posts-large{
+        width: 100%;
+    }
+    .posts-small{
+        width: 50%;
+    }
+    .post-list {
+        width: 100%;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+    .posts-small{
+        width: 100%;
+    }
 }
