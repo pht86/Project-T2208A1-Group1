@@ -1,0 +1,73 @@
+.posts-large{
+    width: 65%;
+    overflow: hidden;
+    float: left;
+}
+.posts-small{
+    width: 35%;
+    overflow: hidden;
+    float: right;
+}
+.post-list{
+    width: 50%;
+    margin-bottom: 40px;
+    text-decoration: none;
+    float: left;
+}
+.posts-img{
+    width: 96%;
+    margin-left: 2%;
+}
+.posts-img-list{
+    width: 46%;
+    margin-left: 2%;
+}
+.posts-title-list{
+    font-size: 15px;
+    width: 96%;
+    margin-left: 2%;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+    color: #FD4084;
+}
+.posts-title-large{
+    font-size: 20px;
+    width: 96%;
+    margin-left: 2%;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0;
+    text-decoration: none;
+    color: #FD4084;
+}
+.posts-title-small{
+    font-size: 15px;
+    width: 96%;
+    margin-left: 2%;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 0;
+    text-decoration: none;
+    color: #FD4084;
+}
+.posts-short-des{
+    width: 96%;
+    margin-left: 2%;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+.posts-short-des-list{
+    width: 96%;
+    margin-left: 2%;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
+.section-line{
+    width: 60%;
+    margin-left: 20%;
+    border: none;
+    border-top: 1px solid #CCCCCC;
+}
