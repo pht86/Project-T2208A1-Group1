@@ -1,5 +1,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+    .col-3{
+        width: 48%;
+        margin-left: 1%;
+    }
     #header-top-left {
         width: 100%;
         text-align: center;
