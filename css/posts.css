@@ -24,8 +24,8 @@
 }
 .posts-title-list{
     font-size: 15px;
-    width: 96%;
-    margin-left: 2%;
+    width: 94%;
+    margin-left: 4%;
     font-weight: 600;
     line-height: 20px;
     text-decoration: none;
@@ -60,8 +60,8 @@
     color: #808080;
 }
 .posts-short-des-list{
-    width: 96%;
-    margin-left: 2%;
+    width: 94%;
+    margin-left: 4%;
     font-size: 14px;
     text-align: justify;
     line-height: 20px;
