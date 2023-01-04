@@ -305,6 +305,9 @@ body{
     margin-left: 0;
     margin-bottom: 20px;
 }
+.link-footer{
+    margin-left: 50px;
+}
 /*------------ Button Go to top ------------*/
 #btnGoTop {
     display: none;

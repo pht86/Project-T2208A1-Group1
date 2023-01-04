@@ -4,6 +4,10 @@
         width: 48%;
         margin-left: 1%;
     }
+    .col-4{
+        width: 48%;
+        margin-left: 1%;
+    }
     #header-top-left {
         width: 100%;
         text-align: center;
@@ -19,6 +23,9 @@
         width: 50%;
         text-align: center;
     }
+    .link-footer{
+        margin-left: 0;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -27,6 +34,10 @@
         display: none;
     }
     .col-3{
+        width: 96%;
+        margin-left: 2%;
+    }
+    .col-4{
         width: 96%;
         margin-left: 2%;
     }
