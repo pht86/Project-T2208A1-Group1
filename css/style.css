@@ -4,6 +4,7 @@
 @import url(gallery.css);
 @import url(books.css);
 @import url(posts.css);
+@import url(courses.css);
 body{
     margin: 0 auto;
     font-family:courier,arial,helvetica;
