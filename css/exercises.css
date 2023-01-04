@@ -1,0 +1,26 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    float: left;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #FD4084;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
