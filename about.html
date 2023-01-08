@@ -97,15 +97,17 @@
         <h5 class="page-sub-title">join our training club and rise to a new challenge</h5>
     </div>
     <div class="clr mb-20"></div>
-    <div id="about-contact">
-        <input type="text" placeholder="Enter Name">
-        <input type="text" placeholder="Enter Subject">
-        <input type="text" placeholder="Enter Email">
-        <input type="text" placeholder="Enter Phone">
-        <div class="clr"></div>
-        <textarea placeholder="Enter Message"></textarea>
-        <button>Send your message</button>
-    </div>
+    <form method="post">
+        <div id="about-contact">
+            <input type="text" placeholder="Enter Name" required>
+            <input type="text" placeholder="Enter Subject" required>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="number" placeholder="Enter Phone" required>
+            <div class="clr"></div>
+            <textarea placeholder="Enter Message" minlength="50" required></textarea>
+            <button type="submit">Send your message</button>
+        </div>
+    </form>
     <div id="about-info">
         <p class="sub-title">Contact info</p>
         <p class="font-15 font-weight-600">HealthZone - Aerobic Training Center</p>
