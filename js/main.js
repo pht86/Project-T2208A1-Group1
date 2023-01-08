@@ -37,3 +37,11 @@ function showTab(evt, tabId) {
     document.getElementById(tabId).style.display = "block";
     evt.currentTarget.className += " active";
 }
+function ShowMenu() {
+    var x = document.getElementById("navbarMobile");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

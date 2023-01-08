@@ -26,6 +26,9 @@
     .link-footer{
         margin-left: 0;
     }
+    #navbarMobile{
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -52,6 +55,12 @@
     }
     #about-info{
         text-align: center;
+    }
+    .navButton:not(:first-child){
+        display: none;
+    }
+    .icon-menu{
+        display: block;
     }
 }
 /* Extra Small Devices, Phones */

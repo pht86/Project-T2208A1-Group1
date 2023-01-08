@@ -177,7 +177,6 @@ body{
 /*------------ Navigation Bar ------------*/
 #navbar{
     width: 100%;
-    height: 60px;
     background-color: #F5F5F5;
     position: -webkit-sticky;
     position: sticky;
@@ -191,13 +190,40 @@ body{
     padding: 10px 15px;
     margin-right: 2px;
     font-size: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #222222;
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.5s;
 }
 .navButton:hover{
+    background-color: #FD4084;
+    color: #FFFFFF;
+}
+.icon-menu{
+    float: right;
+    color: #FD4084;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: none;
+}
+#navbarMobile{
+    display: none;
+}
+.menuMobile{
+    display: flex;
+    padding: 10px 15px;
+    margin-right: 2px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #222222;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.menuMobile:hover{
     background-color: #FD4084;
     color: #FFFFFF;
 }
