@@ -1,36 +1,50 @@
 .book-store{
+    width: 47.5%;
+    float: left;
+    margin: 1%;
+    position: relative;
+    border: 1px solid #eee;
+    background-color: aliceblue;
+}
+.book-store:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.book-section{
     width: 50%;
     float: left;
-    margin-top: 20px;
 }
 .book-image{
     width: 80%;
-    padding-left: 10%;
+    padding: 2%;
 }
 .book-name{
-    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 15px;
     font-weight: 600;
-    padding-right: 10%;
-    margin-top: 0;
+    padding: 2%;
+    margin-top: 10px;
 }
 .book-author{
     font-size: 14px;
     color: #808080;
+    padding: 2%;
 }
 .book-price{
     font-size: 14px;
     font-weight: 600;
     color: #808080;
+    padding: 2%;
     margin-bottom: 20px;
 }
 .book-button{
     font-size: 13px;
     padding: 5px 20px;
+    margin-left: 2%;
     border: 1px solid #808080;
     color: #808080;
     cursor: pointer;
     text-decoration: none;
+    position: absolute;
+    bottom: 10px;
 }
 .book-button:hover{
     color: #FFFFFF;
@@ -38,5 +52,5 @@
     border: none;
 }
 @media only screen and (max-width : 767px) {
-    .book-store{width: 100%;}
+    .book-store{width: 98%;}
 }
