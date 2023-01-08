@@ -18,6 +18,10 @@
     width: 96%;
     margin-left: 2%;
 }
+.post-list-info{
+    width: 50%;
+    float: right;
+}
 .posts-img-list{
     width: 46%;
     margin-left: 2%;
@@ -84,10 +88,27 @@
     .post-list {
         width: 100%;
     }
+    .posts-title-large{
+        font-size: 14px;
+    }
+    .posts-short-des{
+        font-size: 13px;
+    }
+    .posts-title-list{
+        width: 98%;
+        margin-left: 2%;
+        font-size: 13px;
+    }
+    .posts-short-des-list{
+        width: 98%;
+        margin-left: 2%;
+        font-size: 12px;
+    }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
     .posts-small{
         width: 100%;
     }
+
 }
