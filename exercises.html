@@ -88,18 +88,119 @@
 </div>
 <!-- Section Exercises -->
 <div class="section-full">
-    <div class="sidebar">
-        <a class="active" href="#">Exercises by age</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
-        <a href="#">Exercises by benefit</a>
+    <div class="mt-30">
+        <h2 class="page-title">aerobic <span>exercises</span></h2>
+        <h5 class="page-sub-title">healthzone helps you work out the right way</h5>
+    </div>
+    <div class="exercise-container">
+        <div class="sidebar">
+            <div class="accordion">Benefits of aerobic exercise</div>
+            <div class="panel">
+            <ol>
+                <li class="tablinks" onclick="showTab(event, 'Benefits1')">Cardiovascular health</li>
+                <li class="tablinks" onclick="showTab(event, 'Benefits2')">Lowers blood pressure</li>
+                <li class="tablinks" onclick="showTab(event, 'Benefits3')">Regulate blood sugar</li>
+                <li class="tablinks" onclick="showTab(event, 'Benefits4')">Aids sleep</li>
+                <li class="tablinks" onclick="showTab(event, 'Benefits5')">Weight management</li>
+                <li class="tablinks" onclick="showTab(event, 'Benefits6')">Boosts mood</li>
+            </ol>
+            </div>
+            <div class="accordion">At-home aerobic exercise</div>
+            <div class="panel">
+                <ol>
+                    <li class="tablinks" onclick="showTab(event, 'AtHome1')">Jump rope</li>
+                    <li class="tablinks" onclick="showTab(event, 'AtHome2')">Aerobic strength circuit</li>
+                    <li class="tablinks" onclick="showTab(event, 'AtHome3')">Running or jogging</li>
+                    <li class="tablinks" onclick="showTab(event, 'AtHome4')">Walking</li>
+                </ol>
+            </div>
+            <div class="accordion" href="#">Aerobic gym exercises</div>
+            <div class="panel">
+                <ol>
+                    <li class="tablinks" onclick="showTab(event, 'Gym1')">Swimming</li>
+                    <li class="tablinks" onclick="showTab(event, 'Gym2')">Stationary bike</li>
+                    <li class="tablinks" onclick="showTab(event, 'Gym3')">Elliptical</li>
+                </ol>
+            </div>
+            <div class="accordion" href="#">Aerobic class workouts</div>
+            <div class="panel">
+                <ol>
+                    <li class="tablinks" onclick="showTab(event, 'Classes1')">Cardio kickboxing</li>
+                    <li class="tablinks" onclick="showTab(event, 'Classes2')">Zumba</li>
+                    <li class="tablinks" onclick="showTab(event, 'Classes3')">Indoor cycling class</li>
+                </ol>
+            </div>
+            <div class="accordion" href="#">Meditation and mindfulness</div>
+            <div class="panel">
+                <ol>
+                    <li class="tablinks" onclick="showTab(event, 'Meditation1')">Mindful awareness exercises</li>
+                    <li class="tablinks" onclick="showTab(event, 'Meditation2')">Visualization exercises</li>
+                    <li class="tablinks" onclick="showTab(event, 'Meditation3')">Indoor cycling class</li>
+                </ol>
+            </div>
+        </div>
+        <div class="exercise-content">
+            <div id="Benefits1" class="tabcontent">
+                <h2 class="text-center">Benefits1</h2>
+            </div>
+            <div id="Benefits2" class="tabcontent">
+                <h1>Benefits2</h1>
+            </div>
+            <div id="Benefits3" class="tabcontent">
+                <h1>Benefits3</h1>
+            </div>
+            <div id="Benefits4" class="tabcontent">
+                <h1>Benefits4</h1>
+            </div>
+            <div id="Benefits5" class="tabcontent">
+                <h1>Benefits5</h1>
+            </div>
+            <div id="Benefits6" class="tabcontent">
+                <h1>Benefits6</h1>
+            </div>
+            <div id="AtHome1" class="tabcontent">
+                <h1>AtHome1</h1>
+            </div>
+            <div id="AtHome2" class="tabcontent">
+                <h1>AtHome2</h1>
+            </div>
+            <div id="AtHome3" class="tabcontent">
+                <h1>AtHome3</h1>
+            </div>
+            <div id="AtHome4" class="tabcontent">
+                <h1>AtHome4</h1>
+            </div>
+            <div id="Gym1" class="tabcontent">
+                <h1>Gym1</h1>
+            </div>
+            <div id="Gym2" class="tabcontent">
+                <h1>Gym2</h1>
+            </div>
+            <div id="Gym3" class="tabcontent">
+                <h1>Gym3</h1>
+            </div>
+            <div id="Classes1" class="tabcontent">
+                <h1>Classes1</h1>
+            </div>
+            <div id="Classes2" class="tabcontent">
+                <h1>Classes2</h1>
+            </div>
+            <div id="Classes3" class="tabcontent">
+                <h1>Classes3</h1>
+            </div>
+            <div id="Meditation1" class="tabcontent">
+                <h1>Meditation1</h1>
+            </div>
+            <div id="Meditation2" class="tabcontent">
+                <h1>Meditation2</h1>
+            </div>
+            <div id="Meditation3" class="tabcontent">
+                <h1>Meditation3</h1>
+            </div>
+        </div>
     </div>
 </div>
-<div class="clr"></div>
+<div class="clr mb-20"></div>
 <!-- Footer-->
 <footer id="footer" class="bg-dark-22">
     <div class="section-full text-center">
@@ -166,6 +267,26 @@
     <div class="bg-dark-33 font-12 text-white text-center pt-20 pb-20">Copyright ©2022 HealthZone. All Rights Reserved</div>
 </footer>
 <button onclick="GoTop()" id="btnGoTop" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent[0].style.display = "block";
+    tablinks = document.getElementsByClassName("tablinks");
+    tablinks[0].className += " choose";
+</script>
 <script src="js/main.js"></script>
 <script src="js/slider.js"></script>
 </body>

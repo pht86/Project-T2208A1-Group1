@@ -32,10 +32,10 @@ function showTab(evt, tabId) {
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" choose", "");
     }
     document.getElementById(tabId).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " choose";
 }
 function ShowMenu() {
     var x = document.getElementById("navbarMobile");

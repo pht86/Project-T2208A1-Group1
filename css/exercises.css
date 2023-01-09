@@ -1,26 +1,53 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+.exercise-container{
+    height: 100vh;
+    border: 1px solid #f5f5f5;
+}
 .sidebar {
-    margin: 0;
-    padding: 0;
     width: 25%;
     background-color: #f1f1f1;
     float: left;
-    height: 100%;
-    overflow: auto;
+    height: 100vh;
+    overflow: scroll;
 }
-
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+.exercise-content{
+    width: 74%;
+    height: 100vh;
+    float:right;
+    overflow: scroll;
 }
-
-.sidebar a.active {
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 13px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
     background-color: #FD4084;
-    color: white;
 }
-
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+.panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel li{
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.panel li:hover{
+    color: #FD4084;
+}
+.choose{
+    color: #FD4084;
 }
